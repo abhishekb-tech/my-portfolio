@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [activeSection, setActiveSection] = useState('hero')
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +18,7 @@ function App() {
     const element = document.getElementById(sectionId)
     element?.scrollIntoView({ behavior: 'smooth' })
     setActiveSection(sectionId)
+    setIsMobileMenuOpen(false)
   }
 
   const projects = [
@@ -94,7 +96,14 @@ function App() {
           <div className="logo">
             <img src="/Transparent-ABLogo.png" alt="AB Logo" className="logo-img" />
           </div>
-          <div className="nav-links">
+          <button 
+            className="mobile-menu-toggle" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className={`hamburger ${isMobileMenuOpen ? 'open' : ''}`}></span>
+          </button>
+          <div className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <a onClick={() => scrollToSection('hero')}>Home</a>
             <a onClick={() => scrollToSection('about')}>About</a>
             <a onClick={() => scrollToSection('experience')}>Experience</a>

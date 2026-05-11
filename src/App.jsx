@@ -91,7 +91,9 @@ function App() {
     <div className="app">
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
         <div className="nav-content">
-          <div className="logo">AB</div>
+          <div className="logo">
+            <img src="/Transparent-ABLogo.png" alt="AB Logo" className="logo-img" />
+          </div>
           <div className="nav-links">
             <a onClick={() => scrollToSection('hero')}>Home</a>
             <a onClick={() => scrollToSection('about')}>About</a>

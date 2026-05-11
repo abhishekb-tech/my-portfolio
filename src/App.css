@@ -59,10 +59,18 @@ body {
 .logo {
   font-size: 1.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -105,6 +113,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  padding-top: 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -154,7 +163,7 @@ body {
 .tagline {
   font-size: 1.5rem;
   color: var(--accent-green);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-family: 'Courier New', monospace;
 }
 
@@ -166,7 +175,7 @@ body {
 
 .current-role {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: var(--text-primary);
 }
 
@@ -178,7 +187,7 @@ body {
 .bio {
   font-size: 1.1rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   line-height: 1.8;
   max-width: 700px;
 }
@@ -230,7 +239,7 @@ body {
 
 /* Sections */
 section {
-  padding: 6rem 2rem;
+  padding: 4rem 2rem;
 }
 
 .container {
@@ -241,7 +250,7 @@ section {
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   background: linear-gradient(135deg, var(--accent-green), var(--accent-blue));
   -webkit-background-clip: text;
@@ -256,13 +265,13 @@ section {
 
 .about-content {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .about-text p {
   font-size: 1.1rem;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   line-height: 1.8;
 }
 
@@ -273,12 +282,12 @@ section {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .skill-category h3 {
   font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   color: var(--accent-blue);
 }
 
@@ -322,7 +331,7 @@ section {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .timeline-marker {
@@ -432,13 +441,13 @@ section {
 .contact-intro {
   font-size: 1.2rem;
   color: var(--text-secondary);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .contact-item {
@@ -446,7 +455,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   background: var(--bg-card);
   border-radius: 12px;
   border: 1px solid var(--border-color);
@@ -516,7 +525,7 @@ section {
   }
 
   section {
-    padding: 4rem 1rem;
+    padding: 3rem 1rem;
   }
 }
 

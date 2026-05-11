@@ -109,7 +109,6 @@ function App() {
           <div className="hero-text">
             <p className="greeting">hey, i'm</p>
             <h1 className="name">abhishek bhatt</h1>
-            <p className="tagline">&gt; Reactronaut</p>
             <p className="subtitle">currently</p>
             <p className="current-role">● Software Engineer at <span className="highlight">LogicRays</span></p>
             <p className="bio">
@@ -121,7 +120,7 @@ function App() {
               <a href="#contact" className="btn btn-primary" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>
                 Get In Touch
               </a>
-              <a href="https://www.linkedin.com/in/abhishek-bhatt-reactjs/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
+              <a href="https://in.linkedin.com/in/abhishekbhatt9" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
                 LinkedIn
               </a>
             </div>
@@ -236,7 +235,7 @@ function App() {
               </div>
               <div className="contact-item">
                 <span className="contact-icon">💼</span>
-                <a href="https://www.linkedin.com/in/abhishek-bhatt-reactjs/" target="_blank" rel="noopener noreferrer">
+                <a href="https://in.linkedin.com/in/abhishekbhatt9" target="_blank" rel="noopener noreferrer">
                   LinkedIn Profile
                 </a>
               </div>
